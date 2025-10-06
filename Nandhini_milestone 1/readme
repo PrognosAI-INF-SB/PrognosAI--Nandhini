@@ -1,1 +1,67 @@
+PrognosAI: AI-Driven Predictive Maintenance System Using Time-Series Sensor Data
 
+📌 Project Objective
+PrognosAI is an AI-based predictive maintenance system designed to estimate the Remaining Useful Life (RUL) of industrial machinery using multivariate time-series sensor data. Built on the NASA CMAPSS dataset, this project aims to:
+Enable timely maintenance decisions
+Reduce unplanned downtime
+Optimize asset utilization
+It leverages deep learning models like LSTM/GRU to detect sequential degradation patterns and forecast failures across domains such as turbines, pumps, and motors.
+
+🧰 Tech Stack
+Category	Tools/Frameworks
+Programming	Python
+Data Processing	Pandas, NumPy
+Visualization	Matplotlib, Seaborn
+Deep Learning	TensorFlow / Keras
+Metrics & Scaling	Scikit-learn
+UI / API	Streamlit / Flask
+Deployment (Optional)	Docker
+Dataset	NASA CMAPSS
+
+🧪 Milestone 1: Data Preparation & Feature Engineering
+
+🎯 Objective
+Prepare the CMAPSS dataset for model training
+Generate features and compute RUL values
+✅ Deliverables
+✅ Cleaned and preprocessed CMAPSS dataset
+✅ Python scripts for:
+
+Data loading
+
+Rolling window sequence generation
+
+RUL target calculation
+
+✅ Data integrity checks and documentation
+
+📊 Evaluation Criteria
+
+No missing values or corrupted entries
+
+Correct rolling window generation
+
+Accurate RUL computation
+
+Clear documentation of the data preparation process
+
+📥 Getting Started
+
+1. Clone the repository
+git clone https://github.com/yourusername/prognosai.git
+cd prognosai
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Prepare data
+
+Place the CMAPSS dataset in the data/CMAPSS/ directory. You can download it from NASA’s CMAPSS dataset page
+.
+
+4. Run preprocessing
+python src/data_preprocessing.py
+python src/feature_engineering.py
+
+5. Train the model
+python src/model.py
