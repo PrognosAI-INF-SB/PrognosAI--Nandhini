@@ -28,22 +28,18 @@ Generate features and compute RUL values
 ✅ Python scripts for:
 
 Data loading
-
 Rolling window sequence generation
-
 RUL target calculation
 
 ✅ Data integrity checks and documentation
 
 📊 Evaluation Criteria
+   No missing values or corrupted entries
+   Correct rolling window generation
+   Accurate RUL computation
+   Clear documentation of the data preparation process
 
-No missing values or corrupted entries
 
-Correct rolling window generation
-
-Accurate RUL computation
-
-Clear documentation of the data preparation process
 
 📥 Getting Started
 
@@ -55,10 +51,8 @@ cd prognosai
 pip install -r requirements.txt
 
 3. Prepare data
-
 Place the CMAPSS dataset in the data/CMAPSS/ directory. You can download it from NASA’s CMAPSS dataset page
 .
-
 4. Run preprocessing
 python src/data_preprocessing.py
 python src/feature_engineering.py
