@@ -1,1 +1,59 @@
+Milestone 2: Model Development & Training
+
+Overview:
+This milestone develops and trains a time-series deep learning model (LSTM/GRU) to learn patterns from multivariate sensor data for RUL prediction. The model is prototyped on the NASA CMAPSS dataset as part of the broader AI-PrognosAI Predictive Maintenance System
+
+Objectives:
+Implement an LSTM or GRU architecture for RUL regression.
+Train the model on rolling window sensor sequences and computed RUL targets.
+Monitor loss convergence and inspect initial validation results.
+
+Directory Structure:
+text
+project-root/
+  ├── loader.py          # Loads and preprocesses CMAPSS data
+  ├── rul.py             # RUL target computation functions
+  ├── windows.py         # Rolling window sequence generation
+  ├── preprocess.py      # End-to-end preprocessing pipeline
+  ├── model.py           # LSTM/GRU model definition and training
+  ├── train.py           # Training script (CLI-enabled)
+  ├── requirements.txt   # Python dependencies
+  └── README.md          # Documentation
+
+Installation:
+Clone the repo and install requirements:
+
+git clone https://github.com/youruser/ai-prognosai.git
+cd ai-prognosai
+pip install -r requirements.txt
+
+Dataset:
+Ensure that the CMAPSS dataset is downloaded from Kaggle and placed in the data/ folder
+
+Usage:
+Train the RUL Model
+bash
+python train.py --data_path ./data/train.csv --model lstm --epochs 30 --batch_size
+Adjust script arguments for different datasets/models as needed.
+
+Script functions:
+
+loader.py loads and formats sensor data for sequence modeling.
+window.py converts raw data to rolling window sequences.
+rul.py provides RUL computation logic.
+model.py builds and trains the deep learning model.
+train.py runs the full experiment and saves weights/checkpoints.
+
+Deliverables:
+
+Implemented LSTM or GRU model architecture.
+Trained model weights/checkpoints.
+Training and validation loss curves.
+Code for model definition, training, and saving.
+
+Evaluation:
+
+Check loss reduction during training for convergence.
+Use validation plots to inspect predicted vs. actual RUL curves.
+Confirm proper implementation of the deep learning model.
 
