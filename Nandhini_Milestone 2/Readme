@@ -57,3 +57,6 @@ Check loss reduction during training for convergence.
 Use validation plots to inspect predicted vs. actual RUL curves.
 Confirm proper implementation of the deep learning model.
 
+Next Steps:
+Proceed to Milestone 3 for rigorous model evaluation and test-set analysis using RMSE metrics and bias/error diagnostics.
+
